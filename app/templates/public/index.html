@@ -1,8 +1,11 @@
+!<!DOCTYPE html>
 <html lang='en'>
 <head>
   <meta charset='utf-8'>
-  <link rel='stylesheet' href='../static/style.css'>
-  <script src='../static/client.js'></script>
+  <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
+  <!--<script src="{{ url_for('static', filename='js/app.js') }}"></script>-->
+  <link rel='stylesheet' href='C:\Users\bhube\Desktop\fastai\app\static\css\style.css'>
+  <script src='C:\Users\bhube\Desktop\fastai\app\static\js\app.js'></script>
 </head>
 <body>
 <div>
@@ -12,6 +15,7 @@
       Use images of <strong>teddy</strong> bears, <strong>black</strong> bears, <strong>grizzly</strong> bears, or
       all three!
     </p>
+    <img src="{{ url_for('static', filename='img/TEST-IMG.png') }}" alt="">
     <div class='content'>
       <div class='no-display'>
         <input id='file-input'
