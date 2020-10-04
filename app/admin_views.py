@@ -11,5 +11,5 @@ async def analyze(request):
     img_data = await request.form()
     img_bytes = await (img_data['file'].read())
     img = open_image(BytesIO(img_bytes))
-    prediction = learn.predict(img)[0]
+    prediction = model.predict(img)[0]
     return jsonify({'result': str(prediction)})

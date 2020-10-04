@@ -2,20 +2,23 @@
 <html lang='en'>
 <head>
   <meta charset='utf-8'>
-  <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
-  <!--<script src="{{ url_for('static', filename='js/app.js') }}"></script>-->
-  <link rel='stylesheet' href='C:\Users\bhube\Desktop\fastai\app\static\css\style.css'>
-  <script src='C:\Users\bhube\Desktop\fastai\app\static\js\app.js'></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+   <!--<link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+  <link rel='stylesheet' href='app\static\css\style.css'>
+  <script src='app\static\js\app.js'></script> -->
 </head>
 <body>
 <div>
   <div class='center'>
-    <div class='title'>Classify Bear Images 🐻</div>
+    <div class='title'>Classify Zulu Music</div>
     <p>
       Use images of <strong>teddy</strong> bears, <strong>black</strong> bears, <strong>grizzly</strong> bears, or
       all three!
     </p>
-    <img src="{{ url_for('static', filename='img/TEST-IMG.png') }}" alt="">
     <div class='content'>
       <div class='no-display'>
         <input id='file-input'
@@ -25,6 +28,7 @@
                accept='image/*'
                onchange='showPicked(this)'>
       </div>
+      <img src="{{ url_for('static', filename='img/Cilo Siphiwe.png') }}" alt="background">
       <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
       <div class='upload-label'>
         <label id='upload-label'>No file chosen</label>
